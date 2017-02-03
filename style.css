@@ -1,33 +1,49 @@
 body{
 	width: 1600px;
-	margin: auto;
+	mergin-right: auto;
+	margin-left: auto;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Playfair Display', serif;
 };
 
-#container{
-	
+#container{	
 }
 
+/*------------- header -------------*/
+
 #Header{
-	border: solid;
-	/*background-image: url(img/background1.jpg);*/
 	background: linear-gradient(rgba(65, 50, 106, 0.8), rgba(65, 50, 106, 0.8)), url(img/background1.jpg);
 	height: 670px;
 	color: white;
+	/*text-align: center;*/
 }
 
 	
 #navbar{
-	float: left;
 	border: solid red;
 	width: 900px;
-	margin-top: 20px;
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
 	}
-	
+#navbar ul {
+	margin-left: 300px;
+}
+
 #navbar ul li{
 	float: left;
 	padding: 4px;
-	border: solid 1px;
+	
 }
+#navbar ul li a{
+	text-decoration: none;
+	underline: none;
+	color: white;
+}
+#navbar ul li a:hover{
+	color: #00E0D0;
+}
+
 
 #logo{
 	float:left;
@@ -37,7 +53,10 @@ body{
 #main{
 	border: solid blue;
 	width: 900px;
+	text-align: center;
 	margin-top: 200px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #text{
@@ -46,11 +65,15 @@ body{
 	border: solid;
 }
 
-#button{
-	
+#button{	
 }
 
 
+/*  ----------------- content    ------------   */
+#contetnt{
+	margin-left: auto;
+	margin-right: auto;
+}
 
 #AboutVideo{
 	height: 550px;
@@ -68,3 +91,27 @@ body{
 	height: 550px;
 	background: linear-gradient(rgba(65, 50, 106, 0.8), rgba(65, 50, 106, 0.8)), url(img/background1.jpg);
 }
+
+#About{
+	text-align: center;
+	padding: 10px;
+
+}
+
+#AboutLeft{
+	float: left;
+	border: solid;
+}
+
+#AboutRight{
+	float: left;
+	width: 590px;
+	border: solid;
+}
+
+#AboutVideo{
+
+};
+
+
+/*--------------foooter-----------------*/
