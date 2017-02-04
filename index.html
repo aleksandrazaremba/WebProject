@@ -10,20 +10,25 @@
 	
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto" rel="stylesheet"> 
 		
-	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="960.css" type="text/css" />
 	<link rel="stylesheet" href="text.css" type="text/css" />
 	<link rel="stylesheet" href="reset.css" type="text/css" />
-	<link rel="stylesheet" href="960.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+
+
 
 </had>
 
 <body>
-	<div id="container">
+	<div id="container" class="container_12">
 	
 		<div id="Header">
 			<div id="navbar">
-				<div id="logo"><img src="img/logo.png">tajam</div><!-- logo -->
-				<ul id="navigation">
+				<div id="logo" class="grid_2">
+					<img src="img/logo.png">
+					tajam
+				</div><!-- logo -->
+				<ul id="navigation" class="grid_7">
 					<li><a href="#">HOME</a></li>
 					<li><a href="#">ABOUT</a></li>
 					<li><a href="#">EXPERTISE</a></li>
@@ -36,39 +41,50 @@
 			</div><!-- navbar-->
 			<div style="clear:both"></div>
 			
-			<div id="main">
+			<div id="main" class="grid_10">
 				<div id="text">
 					<h2>We Are Awesome Creative Agency</h2>
 					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
 				</div><!-- text -->
-				<div class="button">LEARN MORE</div><!-- button -->
-				<div class="dotnav"></div><!-- dotnav -->	
+				<div class="button" class="grid_2">LEARN MORE</div><!-- button -->
+				<div class="dotnav" class="grid_2"></div><!-- dotnav -->	
 			</div><!-- main -->
 		</div><!-- Header -->
 		
 		
 		
 		<div id="content">
-			<div id="About">
-				<div id="AboutLeft"><img src="img/logo2.png"></div><!-- AboutLeft -->
-				<div id="AboutRight">
-					<h3>OUR STORY</h3>
-					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+			<div id="About" >		
+					<div id="AboutLeft" class="grid_4"><img src="img/logo2.png"></div><!-- AboutLeft -->
+					<div id="AboutRight" class="grid_7">
+						<h3>OUR STORY</h3>
+						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+					</div><!-- AboutRight -->
+					
+					<div style="clear: both"></div>
+					
 					<div class="button">LEARN MORE</div>
-				</div><!-- AboutRight -->
-				<div style="clear: both"></div>
-				<div id="AboutVideo">
-					<img src="img/playicon.png">
-					<h4>WATCH OUR STORY<h4>
-				</div><!-- AboutVideo -->
 			</div><!-- About -->
+				
+				<div style="clear: both"></div>
+				
+			<div id="AboutVideo">
+				<img src="img/playicon.png">
+				<h4>WATCH OUR STORY<h4>
+			</div><!-- AboutVideo -->
+			
+
 			
 			<div id="Expertise">
-				<div id="ExpertiseTitle">
+			
+			
+				
+				<!--<div id="ExpertiseTitle">
 					<h4>EXPERTISE</h4>
 					<p>Proin gravida nibh vel velit auctor aliquet.</p>
-				</div><!-- ExpertiseTitle -->
-				<div class="ExpertiseItem">
+				</div><!-- ExpertiseTitle -->-->
+				<!-- <div class="ExpertiseItem">
+				
 					<div id="ExpertiseItemTop">
 						<div id="ExpertiseItemTopLeft">
 							<img src="img/icon1.png">
@@ -86,6 +102,9 @@
 							<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
 						</div>
 					</div>
+					<div style="clear: both"></div>
+					
+					
 					<div id="ExpertiseItemBottom">
 						<div id="ExpertiseItemBottomLeft">
 							<img src="img/icon4.png">
@@ -103,16 +122,17 @@
 							<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
 						</div>
 					</div>
+					<div style="clear: both"></div>
 				</div><!-- ExpertiseItem -->
 			</div><!-- Expertise -->
 			
 			<div id="Team">
-				<div id="TeamTitle">
+				<div id="TeamTitle" class="grid_6">
 					<h3>MEET OUT AMAZING TEAM</h3>
-					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+					<p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
 				</div>
 				
-				<div class="TeamItem"><!-- 1 -->
+				<div class="TeamItem" class="grid_3"><!-- 1 -->
 					<img src="img/image.png">
 					<h5>SEMF UCUK</h5>
 					<p>CEO and FOUNDER<p>
@@ -133,7 +153,9 @@
 					<p>MARKETING</p>
 				</div><!-- 4 -->
 				
-				<div id="TeamBottom">
+				<div style="clear:both"></div>
+				
+				<div id="TeamBottom" class="grid_4">
 					<p>Become part of our dream team, let\'s join us!</p>
 					<div class= "button">WE ARE HIRING</div>
 				</div>
@@ -141,8 +163,8 @@
 			
 			<div id="Works">
 				<div id="WorksTitle">
-				<h4>OUR WORKS</h4>
-				<p> See All Project in dribbble > </p>
+				<h4 class="grid_2">OUR WORKS</h4>
+				<p class="grid_3"> See All Project in dribbble > </p>
 				</div>
 				
 				<div class="WorksItemT"><img src="img/img1.jpg"></div>
@@ -169,14 +191,16 @@
 			</div><!-- Works -->
 			
 			<div id="Testimonials">
-				<div id="TestimonialsText">
-					<p> " <br></br> 
-					This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. <br></br>
-					JANE GALADRIEL <br></br>
+				<div id="TestimonialsText" class="grid_10">
+					<p> " </p>
+					<br></br> 
+					<p class="grid_10">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
+					<br></br>
+					<p class="grid_2">JANE GALADRIEL <br></br>
 					CEO TENGKUREP
 					</p>
 				</div>
-				<div id="TestimonialsPict">
+				<div id="TestimonialsPict" class="grid_6">
 					<div class="TestimonialsPictNav"><img src="img/back.png"></div>
 						<div class="Pict"><img src="img/pict1.png"></div>
 						<div class="Pict"><img src="img/pict2.png"></div>
@@ -187,31 +211,44 @@
 				</div>
 			</div><!-- Testimonials -->
 			
-			<div id="contact">
-				<div id = "ContactForum">
+			<div id="Contact">
+				<div id = "ContactForum" class="grid_4">
 					<h4>GIVE US A GOOD NEWS</h4>
 				</div>
-				<div id = "Client">
+				<div id = "Client" class="grid_5">
 					<h4>OUR HAPPY CLIENT</h4>
-					<div class="ClientImage"><img src="img/zara.png"></div>
-					<div class="ClientImage"><img src="img/bny.png"></div>
-					<div class="ClientImage"><img src="img/converse.png"></div>
-					<div class="ClientImage"><img src="img/levis.png"></div>
+					<div>
 					
-					<div class="ClientImage"><img src="img/mango.png"></div>
-					<div class="ClientImage"><img src="img/gucci.png"></div>
-					<div class="ClientImage"><img src="img/nike.png"></div>
-					<div class="ClientImage"><img src="img/mupa.png"></div>
-					<div class="ClientImage"><img src="img/bb.png"></div>	
+						<ul id="HappyClient" class="grid_2">
+					<li><a href="#"><img src="img/zara.png"></a></li>
+					<li><a href="#"><img src="img/bny.png"></a></li>
+					<li><a href="#"><img src="img/converse.png"></a></li>
+					<li><a href="#"><img src="img/levis.png"></a></li>
+					<li><a href="#"><img src="img/mango.png"></a></li>
+					<li><a href="#"><img src="img/gucci.png"></a></li>
+					<li><a href="#"><img src="img/mupa.png"></a></li>
+					<li><a href="#"><img src="img/bb.png"></a></li>
+						</ul><!-- HappyClient -->
+					<!-- <div class="ClientImage" class="grid_2"><img src="img/zara.png"></div>
+					<div class="ClientImage" class="grid_2"><img src="img/bny.png"></div>
+					<div class="ClientImage" class="grid_2"><img src="img/converse.png"></div>
+					<div class="ClientImage" class="grid_2"><img src="img/levis.png"></div>
+					
+					<div class="ClientImage" class="grid_2"><img src="img/mango.png"></div>
+					<div class="ClientImage" class="grid_2"><img src="img/gucci.png"></div>
+					<div class="ClientImage" class="grid_2"><img src="img/nike.png"></div>
+					<div class="ClientImage" class="grid_2"><img src="img/mupa.png"></div>
+					<div class="ClientImage" class="grid_2"><img src="img/bb.png"></div> -->
+					</div><!-- ul li -->
 				</div>
-			</div><!-- contact -->
+			</div><!-- Contact -->
 			
 		</div><!-- content -->
 		
 	
 		
 		
-		<div id="footer">
+		<div id="Footer">
 			<div id="items">
 				<div id="right"></><!-- right -->
 				<div id="center"></><!-- center -->
@@ -221,7 +258,7 @@
 				<div id="onleft"></><!-- onleft -->
 				<div id="onright"></><!-- onright -->
 			</div><!-- bottom -->
-		</div><!-- footer -->
+		</div><!-- Footer -->
 	
 	</div> <!-- container -->
 

@@ -1,0 +1,132 @@
+body{
+	width: 1600px;
+	mergin-right: auto;
+	margin-left: auto;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Playfair Display', serif;
+};
+
+#container{	
+}
+
+/*------------- header -------------*/
+
+#Header{
+	background: linear-gradient(rgba(65, 50, 106, 0.8), rgba(65, 50, 106, 0.8)), url(img/background1.jpg);
+	height: 670px;
+	color: white;
+	/*text-align: center;*/
+}
+
+	
+#navbar{
+	width: 900px;
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+#navbar ul {
+	margin-left: 300px;
+}
+
+#navbar ul li{
+	float: left;
+	padding: 4px;
+}
+
+#navbar ul li a{
+	text-decoration: none;
+	underline: none;
+	color: white;
+}
+#navbar ul li a:hover{
+	color: #00E0D0;
+}
+
+
+#logo{
+	float:left;
+	color: #00E0D0;
+}
+
+
+#main{
+	border: solid blue;
+	width: 900px;
+	height: 440px;
+	text-align: center;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#text{
+	width: 200px
+	height: 800px;
+	border: solid;
+}
+
+/*  ----------------- content    ------------   */
+#contetnt{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#Team{
+	height: 550px;
+	background: linear-gradient(rgba(65, 50, 106, 0.8), rgba(65, 50, 106, 0.8)), url(img/background1.jpg);
+}
+
+
+#Testimonials{
+	height: 550px;
+	background: linear-gradient(rgba(65, 50, 106, 0.8), rgba(65, 50, 106, 0.8)), url(img/background1.jpg);
+}
+
+#About{
+	text-align: center;
+	padding: 10px;
+}
+
+#AboutLeft{
+	float: left;
+	border: solid;
+}
+
+#AboutRight{
+	float: left;
+	width: 590px;
+	border: solid;
+}
+
+#AboutVideo{
+	height: 550px;
+	background: linear-gradient(rgba(65, 50, 106, 0.8), rgba(65, 50, 106, 0.8)), url(img/background1.jpg);
+}
+
+
+/*--------------foooter-----------------*/
+
+/*--------- class -----------------------*/
+.button{	
+	border: solid 1px;
+	color: #00E0D0;
+	border-radius: 2px;
+	text: 10px;
+	padding: 15px;
+	position: absolute;
+	display: inline-block;
+}
+
+.WorksItemT{
+	float: left;
+	width: 265px;
+	height: 200px;
+}
+
+.WorksItemB{
+	float: left;
+	width: 265px;
+	height: 200px;
+}
