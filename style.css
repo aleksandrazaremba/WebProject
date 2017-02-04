@@ -1,9 +1,14 @@
 html{
-	mergin-right: auto;
-	margin-left: auto;
+
     font-family: 'Roboto', sans-serif;
     font-family: 'Playfair Display', serif;
+
+}
+
+body{
 	text-align: center;
+	font-size: 14px;
+	font-family: "Roboto";
 }
 
 /*------------- header -----------------*/
@@ -11,7 +16,41 @@ html{
 	background: linear-gradient(rgba(65, 50, 106, 0.8), rgba(65, 50, 106, 0.8)), url(img/background1.jpg);
 	height: 670px;
 	color: white;
-	text-align: center;
+}
+
+#navbar{
+	padding: 20px;
+
+	}
+#navbar ul {
+	float: right;
+	margin-top: 12px;
+}
+
+#navbar ul li{
+	float: left;
+	padding: 4px;
+}
+
+#navbar ul li a{
+	text-decoration: none;
+	underline: none;
+	color: white;
+}
+#navbar ul li a:hover{
+	color: #00E0D0;
+}
+
+#logo{
+	float:left;
+	color: #00E0D0;
+}
+
+
+#text{
+	margin-top: 190px;
+	padding: 10px;
+	border:solid;
 }
 
 
@@ -22,16 +61,20 @@ html{
 
 #AboutLeft{
 	float: left;
+	margin-top: 70px;
 }
 
 #AboutRight{
 	float: left;
+	margin-top: 70px;
 }
 
 #AboutVideo{
 	height: 550px;
 	background: linear-gradient(rgba(65, 50, 106, 0.8), rgba(65, 50, 106, 0.8)), url(img/background1.jpg);
+	color: white;
 }
+
 
 #Expertise{
 	height: 760px;
@@ -48,10 +91,20 @@ html{
 #Team{
 	height: 715px;
 	background: linear-gradient(rgba(65, 50, 106, 0.8), rgba(65, 50, 106, 0.8)), url(img/background1.jpg);
+	color: white;
+}
+
+#TeamTitle{
+	padding: 10px;
 }
 
 .TeamItem{
 	float:left;
+	padding: 10px;
+}
+
+#TeamBottom{
+	
 }
 
 #Works{
@@ -60,17 +113,21 @@ html{
 
 .WorksItemT{
 	float: left;
-	width: 16%;
+	width: 15%;
+	margin-top: 160px;
 }
 
 .WorksItemB{
 	float: left;
-	width: 16%;
+	width: 15%;
+	margin-bottom: 70px;
 }
 
 #Testimonials{
 	height: 500px;
 	background: linear-gradient(rgba(65, 50, 106, 0.8), rgba(65, 50, 106, 0.8)), url(img/background1.jpg);
+	color: white;
+
 }
 
 #Contact{
@@ -83,6 +140,7 @@ html{
 /*--------------foooter-----------------*/
 #Footer{
 	background: linear-gradient(rgba(65, 50, 106, 0.8), rgba(65, 50, 106, 0.8)), url(img/background1.jpg);
+	color: white;
 	height: 400px;
 	color: white;
 	text-align: center;
@@ -100,4 +158,5 @@ html{
 	padding: 15px;
 	position: absolute;
 	display: inline-block;
+	text-decoration: none;
 }
