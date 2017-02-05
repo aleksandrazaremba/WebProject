@@ -2,7 +2,6 @@ html{
 
     font-family: 'Roboto', sans-serif;
     font-family: 'Playfair Display', serif;
-
 }
 
 body{
@@ -17,11 +16,7 @@ body{
 	height: 670px;
 	color: white;
 }
-
-#navbar{
-	padding: 20px;
-
-	}
+	
 #navbar ul {
 	float: right;
 	margin-top: 12px;
@@ -29,7 +24,7 @@ body{
 
 #navbar ul li{
 	float: left;
-	padding: 4px;
+	list-style-type:none;
 }
 
 #navbar ul li a{
@@ -37,6 +32,7 @@ body{
 	underline: none;
 	color: white;
 }
+
 #navbar ul li a:hover{
 	color: #00E0D0;
 }
@@ -46,12 +42,10 @@ body{
 	color: #00E0D0;
 }
 
-
 #text{
 	margin-top: 190px;
 	padding: 10px;
 }
-
 
 /*------------- content ----------------*/
 #About{
@@ -80,19 +74,23 @@ body{
 }
 
 #Exp{
-	margin-top: 140px;
+	margin-top: 100px;
 }
 
-#Expertise ul li{
-	float: left;
+
+
+#Exp ul li{
+	
+	display: inline;
 	margin-top: 60px;
+	list-style-type:none;
 }
-#Expertise ul li a{
-	text-decoration:none;
+#Exp ul li a{
+	text-decoration: none;
 	color: black;
 }
 
-#Expertise ul li a img{
+#Exp ul li a img{
 	padding: 20px;
 }
 
@@ -140,13 +138,16 @@ body{
 }
 
 #TestimonialsPict {
-	margin-left: auto;
-	margin-right: auto;
+	
+}
+#TestimonialsPict ul{
+	display: inline-block;
 }
 
 #TestimonialsPict ul li{
-	float: left;
-	padding: 12px;
+	display: inline;
+	margin-left: 15px;
+	list-style-type:none;
 }
 
 #Contact{
@@ -163,12 +164,15 @@ body{
 	height: 420px;
 	width: 180px;
 }
+
+
 .HappyClient ul li{
 	height: 75px;
 	width: 175px;
 	padding-bottom: 10px;
 	padding-top: 20px;
 	padding-right: 5px;
+	list-style-type: none;
 }
 
 
@@ -178,10 +182,33 @@ body{
 #Footer{
 	background: linear-gradient(rgba(65, 50, 106, 0.8), rgba(65, 50, 106, 0.8)), url(img/background1.jpg);
 	color: white;
-	height: 400px;
+	height: 300px;
 	color: white;
-	text-align: center;
+	text-align: left;
 }
+
+#OurStudio table tr th{
+	padding: 5px;
+}
+
+#FooterBottom  {
+	margin-top: 100px;
+}
+
+#FooterBottom p {
+	float: right;
+}
+
+#FooterBottom ul li{
+	display: inline;
+	list-style-type: none;
+}
+
+#FooterBottom ul li a{
+	text-decoration: none;
+	color: white;
+}
+
 
 
 
@@ -195,5 +222,9 @@ body{
 	padding: 15px;
 	position: absolute;
 	display: inline-block;
+}
+
+.button a{	
 	text-decoration: none;
+	color: #00E0D0;
 }
