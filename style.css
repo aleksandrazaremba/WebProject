@@ -37,11 +37,6 @@ body{
 	color: #00E0D0;
 }
 
-#logo{
-	float:left;
-	color: #00E0D0;
-}
-
 #text{
 	margin-top: 190px;
 	padding: 10px;
@@ -209,7 +204,9 @@ body{
 	color: white;
 }
 
-
+#FooterItemsLeftText{
+	display: block;
+}
 
 
 
@@ -227,4 +224,18 @@ body{
 .button a{	
 	text-decoration: none;
 	color: #00E0D0;
+}
+
+.logo{
+	float: left;
+	color: #00E0D0;
+	font-size: 30px; 
+
+}
+
+
+clearfix: after {
+	display: table;
+	clear: both;
+	content:"";
 }
