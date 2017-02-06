@@ -16,10 +16,13 @@ body{
 	height: 670px;
 	color: white;
 }
+
 	
 #navbar ul {
 	float: right;
 	margin-top: 12px;
+	display: -webkit-flex;
+    display: flex;
 }
 
 #navbar ul li{
@@ -65,20 +68,24 @@ body{
 
 
 #Expertise{
-	height: 520px;
+	height: 500px;
 }
 
 #Exp{
-	margin-top: 100px;
+	margin-top: 70px;
 }
 
-
+#Exp ul{
+	display: -webkit-flex;
+    display: flex;
+}
 
 #Exp ul li{
-	
 	display: inline;
-	margin-top: 60px;
+	margin-top: 15px;
+	margin-bottom: 15px;
 	list-style-type:none;
+	align-items: baseline;
 }
 #Exp ul li a{
 	text-decoration: none;
