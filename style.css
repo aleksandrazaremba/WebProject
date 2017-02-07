@@ -118,20 +118,60 @@ body{
 }
 
 #Works{
-	height: 740px;
+	height: 440px;
+	margin: solid red;
 }
 
+#Works h4{
+	text-align: left;
+	padding-top: 5px;
+	font-size: 22px;
+	font-family: "PlayfairDisplay";
+}
+
+#Works p{
+	float: right;
+	padding-top: 10px;
+	font-size: 14px;
+	font-family: "Roboto";
+}
+
+#Works ul{
+	display: -webkit-flex;
+    display: flex;
+	margin: solid;
+	margin-bottom: 0px;
+}
+
+#Works ul li{
+	display: inline-block;
+	list-style-type:none;
+	margin: 0px;
+}
+
+#Works ul li img{
+	width: calc(100%/1);
+}
+
+#WorksBottom{
+	margin-top: 40px;
+}
+
+
+/*
 .WorksItemT{
-	float: left;
-	width: 15%;
-	margin-top: 160px;
+	display: inline-block;
+	width: calc(100%/6);
+	margin-top: 100px;
 }
 
 .WorksItemB{
-	float: left;
-	width: 15%;
-	margin-bottom: 70px;
+	display: inline-block;
+	width: calc(100%/6);
+	margin-bottom: 45px;
 }
+*/
+
 
 #Testimonials{
 	height: 500px;
@@ -139,9 +179,26 @@ body{
 	color: white;
 }
 
-#TestimonialsPict {
+#TestimonialsText p:first-child{
+	font-size: 100px;
+	font-family: "PlayfairDisplay";
+}
+
+#TestimonialsText p:nth-child(2){
+	font-size: 16px;
+	font-family: "PlayfairDisplay";
+	text-align: center;
+	width: 770px;
+	height: 95px;
+}
+
+#TestimonialsText p:nth-child(3){
 	
 }
+
+#TestimonialsPict {	
+}
+
 #TestimonialsPict ul{
 	display: inline-block;
 }
@@ -162,7 +219,7 @@ body{
 }
 
 .HappyClient{
-	float: left;
+	display: inline-block;
 	height: 420px;
 	width: 180px;
 }
@@ -202,7 +259,7 @@ body{
 }
 
 #FooterBottom ul li{
-	display: inline;
+	display: inline-block;
 	list-style-type: none;
 }
 
@@ -234,15 +291,20 @@ body{
 }
 
 .logo{
-	float: left;
+	display: inline-block;
 	color: #00E0D0;
 	font-size: 30px; 
 
 }
 
+.floatfix:after {
+	 content: " ";
+     display: block;
+	 clear: both;
+     }
 
-clearfix: after {
-	display: table;
-	clear: both;
-	content:"";
-}
+.clearfix:after {
+	 content: " ";
+     display: block;
+	 clear: both;
+     }
