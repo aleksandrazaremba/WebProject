@@ -1,3 +1,5 @@
+
+
 html{
 
     font-family: 'Roboto', sans-serif;
@@ -11,6 +13,7 @@ body{
 }
 
 /*------------- header -----------------*/
+
 #Header{
 	background: linear-gradient(rgba(65, 50, 106, 0.8), rgba(65, 50, 106, 0.8)), url(img/background1.jpg);
 	height: 670px;
@@ -22,7 +25,10 @@ body{
 	float: right;
 	margin-top: 12px;
 	display: -webkit-flex;
-    display: flex;
+    display: flex;	
+	font-size: 13px;
+	font-family: "Roboto";
+	color: rgb(0, 224, 208);
 }
 
 #navbar ul li{
@@ -45,6 +51,17 @@ body{
 	padding: 10px;
 }
 
+#text h2{
+	font-size: 32px;
+	font-family: "PlayfairDisplay";
+}
+
+#text p{
+	font-size: 14px;
+    font-family: "Roboto";
+	color: rgb(255, 255, 255);
+}
+
 /*------------- content ----------------*/
 #About{
 	height: 410px;
@@ -60,10 +77,34 @@ body{
 	margin-top: 70px;
 }
 
+#AboutRight h3{
+	font-size: 22px;
+    font-family: "PlayfairDisplay";
+    color: rgb(65, 61, 75);
+	font-weight: bold;
+}
+
+#AboutRight p{
+	font-size: 14px;
+    font-family: "Roboto";
+    color: rgba(65, 61, 75, 0.749);
+}
+
 #AboutVideo{
 	height: 550px;
 	background: linear-gradient(rgba(65, 50, 106, 0.8), rgba(65, 50, 106, 0.8)), url(img/background1.jpg);
 	color: white;
+}
+
+#AboutVideo a{
+	text-decoration: none;
+    font-size: 16px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+}
+
+#AboutVideo a img{
+	margin-top: 200px;
 }
 
 
@@ -96,7 +137,21 @@ body{
 	padding: 20px;
 }
 
+#Exp ul li h5{
+	font-size: 14px;
+    font-family: "Roboto";
+    color: rgb(65, 61, 75);
+    line-height: 1.2;
+    text-align: center;
+}
 
+#Exp ul li p{
+   font-size: 14px;
+   font-family: "Roboto";
+   color: rgba(51, 51, 51, 0.749);
+   line-height: 1.571;
+   text-align: center;
+}
 
 #Team{
 	height: 715px;
@@ -108,13 +163,45 @@ body{
 	padding: 10px;
 }
 
+#TeamTitle h3{
+	font-size: 22px;
+    font-family: "PlayfairDisplay";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+}
+
+#TeamTitle p{
+	font-size: 14px;
+	font-family: "PlayfairDisplay";
+	color: rgb(249, 249, 249);
+	line-height: 1.2;
+}
+
 .TeamItem{
 	float:left;
 	padding: 10px;
 }
 
-#TeamBottom{
-	
+.TeamItem h5{
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.TeamItem p{
+ font-size: 13px;
+  font-family: "Roboto";
+  color: rgba(250, 250, 250, 0.702);
+  line-height: 1.2;
+}
+
+#TeamBottom p{
+	font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(243, 243, 243);
 }
 
 #Works{
@@ -127,6 +214,9 @@ body{
 	padding-top: 5px;
 	font-size: 22px;
 	font-family: "PlayfairDisplay";
+	color: rgb(65, 61, 75);
+	font-weight: bold;
+	line-height: 1.2;
 }
 
 #Works p{
@@ -134,6 +224,8 @@ body{
 	padding-top: 10px;
 	font-size: 14px;
 	font-family: "Roboto";
+    color: rgb(65, 61, 75);
+    line-height: 1.2;
 }
 
 #Works ul{
@@ -158,21 +250,6 @@ body{
 }
 
 
-/*
-.WorksItemT{
-	display: inline-block;
-	width: calc(100%/6);
-	margin-top: 100px;
-}
-
-.WorksItemB{
-	display: inline-block;
-	width: calc(100%/6);
-	margin-bottom: 45px;
-}
-*/
-
-
 #Testimonials{
 	height: 500px;
 	background: linear-gradient(rgba(65, 50, 106, 0.8), rgba(65, 50, 106, 0.8)), url(img/background1.jpg);
@@ -182,19 +259,34 @@ body{
 #TestimonialsText p:first-child{
 	font-size: 100px;
 	font-family: "PlayfairDisplay";
+	color: rgba(255, 255, 255, 0.902);
 }
 
 #TestimonialsText p:nth-child(2){
 	font-size: 16px;
 	font-family: "PlayfairDisplay";
+	color: rgba(255, 255, 255, 0.851);
+	line-height: 1.625;
 	text-align: center;
 	width: 770px;
 	height: 95px;
+	margin: 0px;
 }
 
 #TestimonialsText p:nth-child(3){
-	
+	margin-bottom: 10px;
+	font-size: 14px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    line-height: 1.571;
+    text-align: center;
 }
+#TestimonialsText p:nth-child(3) span{
+	font-size: 13px;
+	font-family: "Roboto";
+	color: rgba(255, 255, 255, 0.702);
+}
+
 
 #TestimonialsPict {	
 }
@@ -210,7 +302,11 @@ body{
 }
 
 #Contact{
-	height: 650px;
+	height: 550px;
+	font-size: 22px;
+    font-family: "PlayfairDisplay";
+    color: rgb(65, 61, 75);
+    font-weight: bold;
 }
 
 #Client{
@@ -246,12 +342,33 @@ body{
 	text-align: left;
 }
 
+#OurStudio h4{
+	font-size: 15px;
+	font-family: "Roboto";
+	color: rgb(255, 255, 255);
+	line-height: 1.733;
+}
+
+#StayInTouch{
+	font-size: 15px;
+	font-family: "Roboto";
+	color: rgb(255, 255, 255);
+	line-height: 1.733;
+}
+
+
 #OurStudio table tr th{
 	padding: 5px;
+	font-size: 14px;
+	font-family: "Roboto";
+	color: rgb(255, 255, 255);
 }
 
 #FooterBottom  {
-	margin-top: 100px;
+	margin-top: 100px;	
+	font-size: 14px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
 }
 
 #FooterBottom p {
@@ -270,9 +387,30 @@ body{
 
 #FooterItemsLeftText{
 	display: block;
+	  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
 }
 
+#paper img {
+	list-style-type: none;
+}
 
+#fonts{
+	margin: 10px;
+}
+
+#fonts ul{
+	display: -webkit-flex;
+    display: flex;
+}
+
+#fonts ul li{
+	display: inline-block;
+	list-style-type: none;
+	margin-left: 0px;
+	margin-right: 30px;
+}
 
 /*-------------- class ----------------*/
 .button{	
@@ -298,12 +436,6 @@ body{
 }
 
 .floatfix:after {
-	 content: " ";
-     display: block;
-	 clear: both;
-     }
-
-.clearfix:after {
 	 content: " ";
      display: block;
 	 clear: both;
