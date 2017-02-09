@@ -334,6 +334,20 @@ body{
     font-weight: bold;
 }
 
+#ContactForm form input{
+	margin-bottom: 20px;
+	height: 20px;
+	padding: 10px;
+}
+
+
+
+#ContactForm form input:nth-child(4) {
+	padding-bottom: 200px;
+}
+
+
+
 #Client{
 	float: right;
 	margin-right: 5px;
