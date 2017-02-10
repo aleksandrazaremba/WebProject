@@ -362,8 +362,32 @@ body{
 	color: rgb(255, 255, 255);
 }
 
+#StayInTouch{
+	margin-left: 0px;
+}
+
+#SIT{
+	display: inline-block;
+	display: flex;	
+}
+
+#SIT form {
+	margin-left: 0px;
+	display: flex;	
+}
+
+#SIT form input{
+	margin-left: 0px;	
+	padding: 2px;
+	width: 180px;
+	background: rgba(255, 255, 255, 0.3);
+	border: 0px;
+}
+
 #paper img {
 	list-style-type: none;
+	background: rgba(255, 255, 255, 0.3);
+	padding: 5px 20px 5px 20px;
 }
 
 #fonts{
