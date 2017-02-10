@@ -1,5 +1,3 @@
-
-
 html{
 
     font-family: 'Roboto', sans-serif;
@@ -24,8 +22,6 @@ body{
 	margin-top: 12px;
 	display: -webkit-flex;
     display: flex;	
-	font-size: 13px;
-	font-family: "Roboto";
 	color: rgb(0, 224, 208);
 }
 
@@ -52,11 +48,6 @@ body{
 #text h2{
 	font-size: 32px;
 	font-family: "PlayfairDisplay";
-}
-
-#text p{
-						font-size: 14px;
-						font-family: "Roboto";
 }
 
 #Dotnav{
@@ -103,15 +94,11 @@ body{
 }
 
 #AboutRight h3{
-	font-size: 22px;
-    font-family: "PlayfairDisplay";
     color: rgb(65, 61, 75);
 	font-weight: bold;
 }
 
 #AboutRight p{
-							font-size: 14px;
-							font-family: "Roboto";
     color: rgba(65, 61, 75, 0.749);
 }
 
@@ -123,8 +110,8 @@ body{
 
 #AboutVideo a{
 	text-decoration: none;
-    font-size: 16px;
-    font-family: "Roboto";
+	font-size: 16px;
+	font-family: "Roboto";
     color: rgb(255, 255, 255);
 }
 
@@ -167,16 +154,12 @@ body{
 }
 
 #Exp ul li h5{
-									font-size: 14px;
-									font-family: "Roboto";
     color: rgb(65, 61, 75);
     line-height: 1.2;
     text-align: center;
 }
 
 #Exp ul li p{
-									font-size: 14px;
-									font-family: "Roboto";
    color: rgba(51, 51, 51, 0.749);
    line-height: 1.571;
    text-align: center;
@@ -193,8 +176,6 @@ body{
 }
 
 #TeamTitle h3{
-	font-size: 22px;
-    font-family: "PlayfairDisplay";
     color: rgb(255, 255, 255);
     font-weight: bold;
     line-height: 1.2;
@@ -214,23 +195,17 @@ body{
 }
 
 .TeamItem h5{
-									font-size: 14px;
-									font-family: "Roboto";
-  color: rgb(255, 255, 255);
   text-align: center;
 }
 
 .TeamItem p{
- font-size: 13px;
-  font-family: "Roboto";
-  color: rgba(250, 250, 250, 0.702);
-  line-height: 1.2;
+	font-size: 13px;
+	color: rgba(250, 250, 250, 0.702);
+	line-height: 1.2;
 }
 
 #TeamBottom p{
-									font-size: 14px;
-									font-family: "Roboto";
-  color: rgb(243, 243, 243);
+	color: rgb(243, 243, 243);
 }
 
 #Works{
@@ -241,20 +216,14 @@ body{
 #Works h4{
 	text-align: left;
 	padding-top: 5px;
-	font-size: 22px;
-	font-family: "PlayfairDisplay";
 	color: rgb(65, 61, 75);
 	font-weight: bold;
-	line-height: 1.2;
 }
 
 #Works p{
 	float: right;
 	padding-top: 10px;
-									font-size: 14px;
-									font-family: "Roboto";
-    color: rgb(65, 61, 75);
-    line-height: 1.2;
+	color: rgb(65, 61, 75);
 }
 
 #Works ul{
@@ -287,13 +256,11 @@ body{
 
 #TestimonialsText p:first-child{
 	font-size: 100px;
-	font-family: "PlayfairDisplay";
 	color: rgba(255, 255, 255, 0.902);
 }
 
 #TestimonialsText p:nth-child(2){
 	font-size: 16px;
-	font-family: "PlayfairDisplay";
 	color: rgba(255, 255, 255, 0.851);
 	text-align: center;
 	width: 770px;
@@ -301,14 +268,8 @@ body{
 	margin: 0px;
 }
 
-#TestimonialsText p:nth-child(3){
-									font-size: 14px;
-									font-family: "Roboto";
-    color: white;
-}
+
 #TestimonialsText p:nth-child(3) span{
-	font-size: 13px;
-	font-family: "Roboto";
 	color: rgba(255, 255, 255, 0.702);
 }
 
@@ -328,8 +289,6 @@ body{
 
 #Contact{
 	height: 550px;
-	font-size: 22px;
-    font-family: "PlayfairDisplay";
     color: rgb(65, 61, 75);
     font-weight: bold;
 }
@@ -340,13 +299,9 @@ body{
 	padding: 10px;
 }
 
-
-
 #ContactForm form input:nth-child(4) {
 	padding-bottom: 200px;
 }
-
-
 
 #Client{
 	float: right;
@@ -370,8 +325,6 @@ body{
 }
 
 
-
-
 /*--------------foooter-----------------*/
 #Footer{
 	background: linear-gradient(rgba(65, 50, 106, 0.8), rgba(65, 50, 106, 0.8)), url(img/bcfooter.jpg);
@@ -381,30 +334,12 @@ body{
 	text-align: left;
 }
 
-#OurStudio h4{
-								font-size: 15px;
-								font-family: "Roboto";
-	line-height: 1.733;
-}
-
-#StayInTouch{
-								font-size: 15px;
-								font-family: "Roboto";
-	line-height: 1.733;
-}
-
-
 #OurStudio table tr th{
 	padding: 5px;
-	font-size: 14px;
-	font-family: "Roboto";
-	color: rgb(255, 255, 255);
 }
 
 #FooterBottom  {
 	margin-top: 100px;	
-								font-size: 14px;
-								font-family: "Roboto";
     color: rgb(255, 255, 255);
 }
 
@@ -424,9 +359,7 @@ body{
 
 #FooterItemsLeftText{
 	display: block;
-								font-size: 14px;
-								font-family: "Roboto";
-  color: rgb(255, 255, 255);
+	color: rgb(255, 255, 255);
 }
 
 #paper img {
@@ -465,12 +398,23 @@ body{
 	color: #00E0D0;
 }
 
+button{	
+	border: solid 1px;
+	color: #00E0D0;
+	border-radius: 2px;
+	text: 10px;
+	padding: 10px;
+	display: inline-block;
+	background: none;
+}
+
 .logo{
 	display: inline-block;
 	color: #00E0D0;
 	font-size: 30px; 
-
 }
+
+/*-------------- fonts ----------------*/
 
 .FontPropA{
 	font-size: 14px;
@@ -480,6 +424,14 @@ body{
 .FontPropB{
 	font-size: 15px;
 	font-family: "Roboto";
-	color: rgb(255, 255, 255);
-	line-height: 1.733;
+}
+
+.FontPropC{
+	font-size: 13px;
+	font-family: "Roboto";
+}
+
+.FontPropC{
+	font-size: 22px;
+	font-family: "PlayfairDisplay";
 }
