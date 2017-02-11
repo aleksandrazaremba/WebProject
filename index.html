@@ -21,6 +21,7 @@
 	<link rel="stylesheet" href="reset.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	<link rel="stylesheet" href="text.css" type="text/css" />
+	<link rel="javascript" href="script.js" type="text/js" />
 
 </head>
 
@@ -46,34 +47,57 @@
 				<div style="clear:both"></div>
 			
 			
-				<div id="TextBox" class="grid_10 prefix_1 suffix_1">				
-				<div id="text" >
+			
+			
+			<div class="slideshow-container" class="grid_10 prefix_1 suffix_1">
+				
+				<div class="text fade" ><!-- text 1-->
 					<h2> 
 						We Are Awesome Creative Agency
 					</h2>
 					<p class="FontPropA">
 						This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
 					</p>
-				</div><!-- text -->
-				</div><!-- TextBox -->
-				<div style="clear:both"></div>
+					<div class="button" class="grid_2 prefix_5 suffix_5"><a href="#">LEARN MORE</a></div>
+				</div><!-- text 1-->
 				
+				<div class="text fade"><!-- text 2-->
+					<h2> 
+						We Are Awesome 
+					</h2>
+					<p class="FontPropA">
+						This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
+					</p>
+					<div class="button" class="grid_2 prefix_5 suffix_5"><a href="#">LEARN MORE</a></div>
+				</div><!-- text 2-->
 				
-				<div class="button" class="grid_2 prefix_5 suffix_5"><a href="#">LEARN MORE</a></div>
-
-
+				<div class="text fade"><!-- text 3-->
+					<h2> 
+						We Are Creative 
+					</h2>
+					<p class="FontPropA">
+						 Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+					</p>
+					<div class="button" class="grid_2 prefix_5 suffix_5"><a href="#">LEARN MORE</a></div>
+				</div><!-- text 3-->
+				<div class="text fade"><!-- text 4-->
+					<h2> 
+						We Are Agency
+					</h2>
+					<p class="FontPropA">
+						 Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+					</p>
+					<div class="button" class="grid_2 prefix_5 suffix_5"><a href="#">LEARN MORE</a></div>
+				</div><!-- text 4-->
+								
 				
-				
-				<!-- button -->
 				<div id="Dotnav" class="grid_2 prefix_5 suffix_5">
-					<ul>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-					</ul>
+					<span class="dot" onclick="currentSlide(1)"></span> 
+					<span class="dot" onclick="currentSlide(2)"></span> 
+					<span class="dot" onclick="currentSlide(3)"></span> 
+					<span class="dot" onclick="currentSlide(4)"></span> 	
 				</div><!-- Dotnav -->	
-
+			</div><!-- slideshow-container -->
 
 		</div><!-- Header -->
 		
@@ -415,5 +439,9 @@
 
 	</div> <!-- container -->
 
+	
+	
+	<script src="script.js"></script>	
+	
 </body>
 </html>
