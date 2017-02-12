@@ -25,3 +25,44 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+
+/*--------------Video-----------------*/
+var vid, playbtn, seekslider;
+
+function initializePlayer(){
+	
+	/*Set object references*/
+	vid = document.getElementById("myVideo");
+	playbtn = document.getElementById("playpausebtn");
+	seekslider = document.getElementById("seekslider");
+
+	/*Add event listeners*/
+	playbtn.addEventListener("click", playPause, false);
+	seekslider.addEventListener("change", vidSeek, false);
+	vid.addEventListener("timeupdate", seektimeuptade, false);
+	
+}
+window.onload = initializePlayer;
+
+
+function playPause(){
+	if(vid.paused){
+		vid.play();
+		playbtn.innerHTML = "Pause";
+	}else{
+		vid.pause();
+		playbtn.innerHTML = "Play";
+	}	
+}
+
+
+function vidSeek(){
+	var seekto = vid.duration * (seekslider.value / 100);
+	vid.currentTime = seekto;
+}
+
+function seektimeuptade(){
+	var nt = vid.currentTime * (100 / vid.duration); /*new time*/
+	seekslider.value = nt;
+}

@@ -60,20 +60,23 @@ body{
   position: relative;
   margin: auto;
 }
-
+#Dotnav span{
+	border: solid 2px #bbb;
+}
 .dot {
   cursor:pointer;
   height: 13px;
   width: 13px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: none;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.active, .dot:hover, #Dotnav span:hover{
+  background-color: #00E0D0;
+  border: solid 2px #00E0D0;
 }
 
 .fade {
@@ -113,12 +116,22 @@ body{
     color: rgba(65, 61, 75, 0.749);
 }
 
+video{
+	height: 550px;
+	width: 960px;
+}
+
+#VideoControlsBar{
+	background: linear-gradient(rgba(65, 50, 106, 0.8), rgba(65, 50, 106, 0.8)), url(img/bcvideo.jpg);
+}
+
 #AboutVideo{
 	height: 550px;
 	background: linear-gradient(rgba(65, 50, 106, 0.8), rgba(65, 50, 106, 0.8)), url(img/bcvideo.jpg);
 	color: white;
 }
 
+/*
 #AboutVideo a{
 	text-decoration: none;
 	font-size: 16px;
@@ -131,9 +144,8 @@ body{
 	padding: 10px;
 	border: 3px solid white;
 	border-radius: 50%;
-
 }
-
+*/
 
 #Expertise{
 	height: 500px;
@@ -201,7 +213,7 @@ body{
 }
 
 .TeamItem{
-	float:left;
+	float: left;
 	padding: 10px;
 }
 
@@ -433,7 +445,7 @@ body{
 	color: #00E0D0;
 }
 
-button{	
+#submit{	
 	border: solid 1px;
 	color: #00E0D0;
 	border-radius: 2px;

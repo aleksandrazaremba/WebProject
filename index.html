@@ -8,14 +8,11 @@
 	<meta name="keywords" content="css, odcinek" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	
-	
+		
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Roboto:300" rel="stylesheet"> 
-	
-	
-	
+		
 		
 	<link rel="stylesheet" href="960.css" type="text/css" />
 	<link rel="stylesheet" href="reset.css" type="text/css" />
@@ -38,19 +35,17 @@
 					<li><a href="#Header">HOME</a></li>
 					<li><a href="#About">ABOUT</a></li>
 					<li><a href="#Expertise">EXPERTISE</a></li>
-					<li><a href="#Teams">TEAMS</a></li>
+					<li><a href="#Team">TEAM</a></li>
 					<li><a href="#Works">WORKS</a></li>
-					<li><a href="#People">PEOPLE SAY</a></li>
-					<li><a href="#Contact">CONTACT</a></li>
+					<li><a href="#Testimonials">PEOPLE SAY</a></li>
+					<li><a href="#ContactForum">CONTACT</a></li>
 				</ul><!-- navigation -->				
 			</div><!-- navbar-->	
 				<div style="clear:both"></div>
 			
 			
 			
-			
-			<div class="slideshow-container" class="grid_10 prefix_1 suffix_1">
-				
+			<div class="slideshow-container" class="grid_10 prefix_1 suffix_1">			
 				<div class="text fade" ><!-- text 1-->
 					<h2> 
 						We Are Awesome Creative Agency
@@ -59,8 +54,7 @@
 						This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
 					</p>
 					<div class="button" class="grid_2 prefix_5 suffix_5"><a href="#">LEARN MORE</a></div>
-				</div><!-- text 1-->
-				
+				</div><!-- text 1-->				
 				<div class="text fade"><!-- text 2-->
 					<h2> 
 						We Are Awesome 
@@ -69,8 +63,7 @@
 						This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
 					</p>
 					<div class="button" class="grid_2 prefix_5 suffix_5"><a href="#">LEARN MORE</a></div>
-				</div><!-- text 2-->
-				
+				</div><!-- text 2-->				
 				<div class="text fade"><!-- text 3-->
 					<h2> 
 						We Are Creative 
@@ -88,8 +81,7 @@
 						 Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
 					</p>
 					<div class="button" class="grid_2 prefix_5 suffix_5"><a href="#">LEARN MORE</a></div>
-				</div><!-- text 4-->
-								
+				</div><!-- text 4-->								
 				
 				<div id="Dotnav" class="grid_2 prefix_5 suffix_5">
 					<span class="dot" onclick="currentSlide(1)"></span> 
@@ -98,10 +90,8 @@
 					<span class="dot" onclick="currentSlide(4)"></span> 	
 				</div><!-- Dotnav -->	
 			</div><!-- slideshow-container -->
-
 		</div><!-- Header -->
-		
-		
+				
 		
 		<div id="content">
 			<div id="About" >		
@@ -117,23 +107,34 @@
 									
 					<div class="button"><a href="#">LEARN MORE</a></div>
 
-					
-					
+									
 			</div><!-- About -->
 				
 				<div style="clear: both"></div>
 				
 			<div id="AboutVideo">
+			
+					<video id="myVideo">
+						<source src="video/video1.mp4" >
+					</video>
+					
+					<div id="VideoControlsBar">
+						<button id="playpausebtn">Play</button>
+						<input id="seekslider" type="range" min="0" max="100" value="0" step"1">
+
+					</div>
+			
+			<!--
 				<a href="#">
 					<img src="img/playicon.png">
 					<h4>WATCH OUR STORY<h4>
 				</a>
+				-->
+				
 			</div><!-- AboutVideo -->
 			
-
 			
-			<div id="Expertise">
-			
+			<div id="Expertise">			
 				<div id="Exp">
 					<ul class="FontPropA">					
 						<li class="grid_4 alpha prefix_0">
@@ -189,6 +190,7 @@
 						</li>						
 					</ul>
 				</div>
+				
 				<div style="clear: both"></div>
 		
 			</div><!-- Expertise -->
@@ -205,7 +207,7 @@
 				
 				<div style="clear:both"></div>
 				
-				<div class="TeamItem" class="grid_3"><!-- 1 -->
+				<div class="TeamItem" class="grid_3 prefix_0"><!-- 1 -->
 					<img src="img/image.png">
 					<h5>SEMF UCUK</h5>
 					<p>CEO and FOUNDER<p>
@@ -234,9 +236,9 @@
 				
 				<div style="clear:both"></div>
 							
-					<div class= "button"><a href="#">WE ARE HIRING</a></div>
+				<div class= "button"><a href="#">WE ARE HIRING</a></div>
 
-			</div><!-- Team -->
+		</div><!-- Team -->
 			
 			<div id="Works">
 				<div id="WorksTitle">
@@ -265,8 +267,7 @@
 						<li><img src="img/img1.jpg"></li>
 						<li><img src="img/img3.jpg"></li>
 						<li><img src="img/img5.jpg"></li>
-					</ul>				
-				
+					</ul>								
 				
 				<div id="WorksBottom">								
 					<div class="button">
@@ -279,12 +280,10 @@
 			
 			<div id="Testimonials" class="FontPropA">
 				<div id="TestimonialsText" class="grid_10 prefix_1 suffix_1">
-					<p> " </p>
-					
+					<p> " </p>					
 					<p class="grid_10">
 						This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. 
-					</p>
-			
+					</p>			
 					<p class="grid_2 prefix_4" >
 						JANE GALADRIEL <br>
 						<span class="FontPropA">
@@ -319,17 +318,14 @@
 							<input type="text" placeholder="Your Message" class="grid_4">
 						</form>
 						
-						<button>Submit</button><br/>						
-						
-								<!--	<div class="button"><a href="#">Submit</a></div>			-->	
-										
+						<button id="submit">Submit</button><br/>												
+								<!--	<div class="button"><a href="#">Submit</a></div>			-->										
 					</div>
 					
 				</div>
 				
 				<div id = "Client" class="grid_5">
-					<h4>OUR HAPPY CLIENT</h4>
-					
+					<h4>OUR HAPPY CLIENT</h4>					
 					<div class="HappyClient" class="grid_2">
 						<ul>
 							<li><a href="#"><img src="img/zara.png"></a></li>
@@ -349,14 +345,12 @@
 						
 					</div><!-- ul li -->
 				</div>
-			</div><!-- Contact -->
-			
+			</div><!-- Contact -->			
 		</div><!-- content -->
 		
 
 		
-		<div id="Footer">
-		
+		<div id="Footer">		
 			<div id="FooterItems">
 				<div id="FooterItemsLeft" class="grid_4" class="class="FontPropA">
 				
@@ -369,8 +363,7 @@
 						<p> 
 							lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. 
 						</p>
-					</div>	
-					
+					</div>						
 				</div>
 				
 				<div id="OurStudio" class="grid_4">
@@ -440,8 +433,9 @@
 	</div> <!-- container -->
 
 	
-	
-	<script src="script.js"></script>	
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>	
 	
 </body>
 </html>
