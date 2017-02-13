@@ -56,10 +56,10 @@ playButton.addEventListener("click", function() {
   vid.classList.toggle("stopfade");
   if (vid.paused) {
     vid.play();
-    playButton.innerHTML = "Pause";
+    playButton.style.background = "url(img/pauseicon.png) no-repeat center" ;
   } else {
     vid.pause();
-    playButton.innerHTML = "Play";
+    playButton.style.background = "url(img/playicon.png) no-repeat center";
   }
 })
 
