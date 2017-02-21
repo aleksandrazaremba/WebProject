@@ -33,10 +33,10 @@ function showSlides(n) {
 var vid = document.getElementById("bgvid");
 var playButton = document.querySelector("#polina button");
 
+
 if (window.matchMedia('(prefers-reduced-motion)').matches) {
     vid.removeAttribute("autoplay");
     vid.pause();
-    playButton.innerHTML = "Paused";
 }
 
 function vidFade() {
@@ -58,7 +58,7 @@ playButton.addEventListener("click", function() {
     vid.play();
     playButton.style.background = "url(img/pauseicon.png) no-repeat center" ;
   } else {
-    vid.pause();
+    vid.paused();
     playButton.style.background = "url(img/playicon.png) no-repeat center";
   }
 })

@@ -129,8 +129,8 @@ video {
     height: 550px;
 	width: 960px;
     z-index: -100;
-   /background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
-  transition: 1s opacity;
+   background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+	transition: 1s opacity;
 }
 
 
@@ -142,7 +142,6 @@ video {
   display: block;
   width: 80px;
   height: 80px;
-  padding: .4rem;
   border: 4px solid; 
   background: url(img/playicon.png) no-repeat center;
   color: #fff;
@@ -151,7 +150,7 @@ video {
   transition: .3s background;
   z-index:100;
   position:relative;
-  top: -450px;
+  top: -400px;
   margin-left:auto;
   margin-right: auto;
 }
