@@ -15,7 +15,6 @@ body{
 	height: 670px;
 	color: white;
 }
-
 	
 #navbar ul {
 	float: right;
@@ -26,7 +25,7 @@ body{
 }
 
 #navbar ul li{
-	float: left;
+	display: inline-block;
 	list-style-type:none;
 }
 
@@ -40,41 +39,56 @@ body{
 	color: #00E0D0;
 }
 
-#text{
+.text{
 	margin-top: 190px;
 	padding: 10px;
+	display: none;
+	height: 300px;
 }
 
-#text h2{
+.text h2{
 	font-size: 32px;
 	font-family: "PlayfairDisplay";
 }
 
-#Dotnav{
-	margin-top: 100px;
+.text p{
+	height: 100px;
 }
 
-#Dotnav ul{
-	display: -webkit-flex;
-    display: flex;
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+#Dotnav span{
+	border: solid 2px #bbb;
+}
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: none;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
-#Dotnav ul li{
-	width: 20px;
-	height: 20px;
-	margin: 5px;
-	
-	list-style-type:none;
-	border: 1px solid rgb(194, 194, 194);
-	border-radius: 50%;
+.active, .dot:hover, #Dotnav span:hover{
+  background-color: #00E0D0;
+  border: solid 2px #00E0D0;
 }
 
-#Dotnav ul li a{
-	text-decoration: none;
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
-#Dotnav ul li:hover{
-	background-color: rgb(0, 224, 208);
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }
 
 
@@ -108,20 +122,54 @@ body{
 	color: white;
 }
 
-#AboutVideo a{
-	text-decoration: none;
-	font-size: 16px;
-	font-family: "Roboto";
-    color: rgb(255, 255, 255);
+
+
+video { 
+    position: static;
+    height: 550px;
+	width: 960px;
+    z-index: -100;
+   /background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+  transition: 1s opacity;
 }
 
-#AboutVideo a img{
-	margin-top: 200px;
-	padding: 10px;
-	border: 3px solid white;
-	border-radius: 50%;
 
+.stopfade { 
+   opacity: .5;
+}/*video play*/
+
+#polina button { 
+  display: block;
+  width: 80px;
+  height: 80px;
+  padding: .4rem;
+  border: 4px solid; 
+  background: url(img/playicon.png) no-repeat center;
+  color: #fff;
+  border-radius: 50%; 
+  cursor: pointer;
+  transition: .3s background;
+  z-index:100;
+  position:relative;
+  top: -450px;
+  margin-left:auto;
+  margin-right: auto;
 }
+#polina button:hover { 
+   background: rgba(0,0,0,0.5);
+}
+
+
+@media screen and (max-width: 500px) { 
+  div{width:70%;} 
+}
+@media screen and (max-device-width: 800px) {
+  html { background: url(https://thenewcode.com/assets/images/polina.jpg) #000 no-repeat center center fixed; }
+  #bgvid { display: none; }
+}
+
+
+
 
 
 #Expertise{
@@ -190,7 +238,7 @@ body{
 }
 
 .TeamItem{
-	float:left;
+	float: left;
 	padding: 10px;
 }
 
@@ -254,12 +302,13 @@ body{
 	color: white;
 }
 
-#TestimonialsText p:first-child{
+
+#Testimonials p:first-child{
 	font-size: 100px;
 	color: rgba(255, 255, 255, 0.902);
 }
 
-#TestimonialsText p:nth-child(2){
+#Testimonials p:nth-child(2){
 	font-size: 16px;
 	color: rgba(255, 255, 255, 0.851);
 	text-align: center;
@@ -269,23 +318,28 @@ body{
 }
 
 
-#TestimonialsText p:nth-child(3) span{
+#Testimonials p:nth-child(3) span{
 	color: rgba(255, 255, 255, 0.702);
 }
 
+.clip img{
+  position:relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
 
-#TestimonialsPict {	
 }
 
-#TestimonialsPict ul{
-	display: inline-block;
-}
-
-#TestimonialsPict ul li{
+.clip {
+	overflow: hidden;
 	display: inline;
-	margin-left: 15px;
-	list-style-type:none;
 }
+
+.center .slick-center img{
+  width: 70px;
+  height: 70px;
+}
+
 
 #Contact{
 	height: 550px;
@@ -422,7 +476,7 @@ body{
 	color: #00E0D0;
 }
 
-button{	
+#submit{	
 	border: solid 1px;
 	color: #00E0D0;
 	border-radius: 2px;
@@ -436,6 +490,12 @@ button{
 	display: inline-block;
 	color: #00E0D0;
 	font-size: 30px; 
+}
+
+.clearfix: after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /*-------------- fonts ----------------*/
