@@ -25,7 +25,7 @@ body{
 }
 
 #navbar ul li{
-	float: left;
+	display: inline-block;
 	list-style-type:none;
 }
 
@@ -302,12 +302,13 @@ video {
 	color: white;
 }
 
-#TestimonialsText p:first-child{
+
+#Testimonials p:first-child{
 	font-size: 100px;
 	color: rgba(255, 255, 255, 0.902);
 }
 
-#TestimonialsText p:nth-child(2){
+#Testimonials p:nth-child(2){
 	font-size: 16px;
 	color: rgba(255, 255, 255, 0.851);
 	text-align: center;
@@ -317,23 +318,42 @@ video {
 }
 
 
-#TestimonialsText p:nth-child(3) span{
+#Testimonials p:nth-child(3) span{
 	color: rgba(255, 255, 255, 0.702);
 }
 
 
-#TestimonialsPict {	
+.slider{
+width: 500px;
 }
 
-#TestimonialsPict ul{
-	display: inline-block;
+
+
+.clip img{
+  position:relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#TestimonialsPict ul li{
+.clip {
+	overflow: hidden;
 	display: inline;
-	margin-left: 15px;
-	list-style-type:none;
 }
+.center .slick-slide {
+	
+}
+
+.center .slick-center img{
+  width: 70px;
+  height: 70px;
+}
+
+
+
+
+
+
+
 
 #Contact{
 	height: 550px;
@@ -484,6 +504,12 @@ video {
 	display: inline-block;
 	color: #00E0D0;
 	font-size: 30px; 
+}
+
+.clearfix: after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /*-------------- fonts ----------------*/

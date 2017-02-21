@@ -63,5 +63,25 @@ playButton.addEventListener("click", function() {
   }
 })
 
+/*-------------- Slider -----------------*/
+
+$(document).ready(function(){	
+	$('.center').slick({
+		 centerMode: true,
+		 arrows:true,
+		 infinite: true,
+	     centerPadding: '0px',
+		slidesToShow: 5,
+		 speed: 500,
+		 variableWidth: false,
+	});
+	$('.center').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+		 console.log('beforeChange', currentSlide, nextSlide);
+	});
+	$('.center').on('afterChange', function(event, slick, currentSlide){
+	  console.log('afterChange', currentSlide);
+	});
+});
+
 
 

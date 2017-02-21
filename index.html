@@ -13,12 +13,15 @@
 	
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Roboto:300" rel="stylesheet"> 
 		
-		
 	<link rel="stylesheet" href="960.css" type="text/css" />
 	<link rel="stylesheet" href="reset.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	<link rel="stylesheet" href="text.css" type="text/css" />
 	<link rel="javascript" href="script.js" type="text/js" />
+	
+	
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
 </head>
 
@@ -26,12 +29,12 @@
 	<div id="container" class="container_12">
 	
 		<div id="Header">
-			<div id="navbar" >
+			<div id="navbar" class="clearfix">
 				<div class="logo" class="grid_2">
 					<img src="img/logo.png">
 					tajam
 				</div><!-- logo -->
-				<ul id="navigation" class="grid_8" class="FontPropC">
+				<ul id="navigation" class="grid_8 prefix_2" class="FontPropC">
 					<li><a href="#Header">HOME</a></li>
 					<li><a href="#About">ABOUT</a></li>
 					<li><a href="#Expertise">EXPERTISE</a></li>
@@ -41,9 +44,7 @@
 					<li><a href="#ContactForum">CONTACT</a></li>
 				</ul><!-- navigation -->				
 			</div><!-- navbar-->	
-				<div style="clear:both"></div>
-			
-			
+		
 			
 			<div class="slideshow-container" class="grid_10 prefix_1 suffix_1">			
 				<div class="text fade" ><!-- text 1-->
@@ -95,15 +96,15 @@
 		
 		<div id="content">
 			<div id="About" >		
-					<div id="AboutLeft" class="grid_4"><img src="img/logo2.png"></div><!-- AboutLeft -->
-					<div id="AboutRight" class="grid_7">
+					<div id="AboutLeft" class="grid_4" ><img src="img/logo2.png"></div><!-- AboutLeft -->
+					<div id="AboutRight" class="grid_7" >
 						<h3 class="FontPropD">OUR STORY</h3>
-						<p class="FontPropA">
+						<p class="FontPropA" class="clearfix">
 							This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
 						</p>
 					</div><!-- AboutRight -->
 					
-					<div style="clear: both"></div>
+					<!--<div style="clear: both"></div>-->
 									
 					<div class="button"><a href="#">LEARN MORE</a></div>
 
@@ -277,33 +278,44 @@
 				</div>
 			</div><!-- Works -->
 			
-			<div id="Testimonials" class="FontPropA">
-				<div id="TestimonialsText" class="grid_10 prefix_1 suffix_1">
-					<p> " </p>					
-					<p class="grid_10">
-						This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. 
-					</p>			
-					<p class="grid_2 prefix_4" >
-						JANE GALADRIEL <br>
-						<span class="FontPropA">
-							CEO TENGKUREP
-						</span>
-					</p>
-				</div>
+			<div id="Testimonials" class="FontPropA">	
+
+				<div class="grid_10 prefix_1 suffix_1">
+								<p> " </p>					
+								<p >
+									This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. 
+								</p>			
+								<p >
+									JANE GALADRIEL <br>
+									<span class="FontPropA">
+										CEO TENGKUREP
+									</span>
+								</p>
+							
+
 				
 				
-				<div id="TestimonialsPict" class="grid_6 prefix_3 suffix_3">				
-					<ul >
-						<li><a href="#"><img src="img/back.png"></a></li>
-						<li><a href="#"><img src="img/pict1.png"></a></li>
-						<li><a href="#"><img src="img/pict2.png"></a></li>
-						<li><a href="#"><img src="img/pict3.png"></a></li>
-						<li><a href="#"><img src="img/pict4.png"></a></li>
-						<li><a href="#"><img src="img/pict5.png"></a></li>
-						<li><a href="#"><img src="img/forward.png"></a></li>
-					</ul>
+						  <div class="slider center grid_9">
+							<div class="clip"><img src="img/pict1.png"></div>
+							<div class="clip"><img src="img/pict2.png"></div>
+							<div class="clip"><img src="img/pict3.png"></div>
+							<div class="clip"><img src="img/pict4.png"></div>
+							<div class="clip"><img src="img/pict5.png"></div>
+							<div class="clip"><img src="img/pict1.png"></div>
+							<div class="clip"><img src="img/pict2.png"></div>
+							<div class="clip"><img src="img/pict3.png"></div>
+							<div class="clip"><img src="img/pict4.png"></div>
+							<div class="clip"><img src="img/pict5.png"></div>
+						  </div>
 				</div>
+								
 			</div><!-- Testimonials -->
+			
+			
+			
+			
+			
+			
 			
 			<div id="Contact" class="FontPropD">
 				<div id = "ContactForum" class="grid_4">
@@ -435,6 +447,14 @@
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>	
+	
+	
+	
+				<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+			<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+			<script type="text/javascript" src="slick/slick.min.js"></script>
+			
+			<script type="text/javascript" src="script.js"></script>
 	
 </body>
 </html>
