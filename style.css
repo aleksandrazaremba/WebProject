@@ -322,37 +322,23 @@ video {
 	color: rgba(255, 255, 255, 0.702);
 }
 
-
-.slider{
-width: 500px;
-}
-
-
-
 .clip img{
   position:relative;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 30px;
+
 }
 
 .clip {
 	overflow: hidden;
 	display: inline;
 }
-.center .slick-slide {
-	
-}
 
 .center .slick-center img{
   width: 70px;
   height: 70px;
 }
-
-
-
-
-
-
 
 
 #Contact{
