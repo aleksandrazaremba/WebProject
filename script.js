@@ -28,41 +28,60 @@ function showSlides(n) {
 
 
 /*--------------Video-----------------*/
-var vid, playbtn, seekslider;
-
-function initializePlayer(){
-	
-	/*Set object references*/
-	vid = document.getElementById("myVideo");
-	playbtn = document.getElementById("playpausebtn");
-	seekslider = document.getElementById("seekslider");
-
-	/*Add event listeners*/
-	playbtn.addEventListener("click", playPause, false);
-	seekslider.addEventListener("change", vidSeek, false);
-	vid.addEventListener("timeupdate", seektimeuptade, false);
-	
-}
-window.onload = initializePlayer;
 
 
-function playPause(){
-	if(vid.paused){
-		vid.play();
-		playbtn.innerHTML = "Pause";
-	}else{
-		vid.pause();
-		playbtn.innerHTML = "Play";
-	}	
+var vid = document.getElementById("bgvid");
+var playButton = document.querySelector("#polina button");
+
+if (window.matchMedia('(prefers-reduced-motion)').matches) {
+    vid.removeAttribute("autoplay");
+    vid.pause();
+    playButton.innerHTML = "Paused";
 }
 
-
-function vidSeek(){
-	var seekto = vid.duration * (seekslider.value / 100);
-	vid.currentTime = seekto;
+function vidFade() {
+  vid.classList.add("stopfade");
 }
 
-function seektimeuptade(){
-	var nt = vid.currentTime * (100 / vid.duration); /*new time*/
-	seekslider.value = nt;
-}
+vid.addEventListener('ended', function()
+{
+// only functional if "loop" is removed 
+vid.pause();
+// to capture IE10
+vidFade();
+}); 
+
+
+playButton.addEventListener("click", function() {
+  vid.classList.toggle("stopfade");
+  if (vid.paused) {
+    vid.play();
+    playButton.style.background = "url(img/pauseicon.png) no-repeat center" ;
+  } else {
+    vid.pause();
+    playButton.style.background = "url(img/playicon.png) no-repeat center";
+  }
+})
+
+/*-------------- Slider -----------------*/
+
+$(document).ready(function(){	
+	$('.center').slick({
+		 centerMode: true,
+		 arrows:true,
+		 infinite: true,
+	     centerPadding: '0px',
+		slidesToShow: 5,
+		 speed: 500,
+		 variableWidth: false,
+	});
+	$('.center').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+		 console.log('beforeChange', currentSlide, nextSlide);
+	});
+	$('.center').on('afterChange', function(event, slick, currentSlide){
+	  console.log('afterChange', currentSlide);
+	});
+});
+
+
+
