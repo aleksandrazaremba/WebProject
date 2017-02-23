@@ -462,6 +462,7 @@ video {
 
 /*-------------- class ----------------*/
 .button{	
+	position: relative;
 	border: solid 1px;
 	color: #00E0D0;
 	border-radius: 2px;
@@ -491,11 +492,11 @@ video {
 	font-size: 30px; 
 }
 
-.clearfix: after {
-  content: "";
-  display: table;
-  clear: both;
-}
+.clearfix:after{
+	display: block;
+	content: " ";
+	clear: both;
+	}
 
 /*-------------- fonts ----------------*/
 
