@@ -287,6 +287,57 @@ video {
 
 /*--------------foooter-----------------*/
 
+#Footer{
+	height: 350px;
+	display: inline-block;
+	list-style-type: none;
+}
+
+#FooterItems{
+	margin-top: 50px;
+}
+
+
+
+#FooterBottom  {
+	margin-top: 100px;	
+}
+
+#OurStudio table tr th{
+	padding: 5px;
+}
+
+#SIT form input{
+	width: 100%;
+}
+
+#fonts{
+	margin: 10px;
+}
+
+#fonts ul{
+	display: -webkit-flex;
+    display: flex;
+}
+
+#fonts ul li{
+	display: inline-block;
+	list-style-type: none;
+	margin-left: 0px;
+	margin-right: 20px;
+}
+
+#FooterBottom ul li{
+	display: inline-block;
+	list-style-type: none;
+	margin-left: 10px;
+}
+
+#FooterBottom ul li a{
+	text-decoration: none;
+	color: white;
+}
+
 /*-------------- class ----------------*/
 .overlay{
 	background-color: rgba(76, 61, 114, 0.5);
