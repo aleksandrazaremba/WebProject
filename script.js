@@ -29,7 +29,25 @@ function showSlides(n) {
 
 /*--------------Video-----------------*/
 
+$(document).ready(function () {   
+    // video controls
+    $('#polina').on('click', function () {
+        var video = $('#bgvid').get(0);
+        var playButton = $('#polina > button');
 
+        if (video.paused) {
+            video.play();
+            playButton.style.background = "";
+			playButton.attr('src', 'img/playicon.png');
+        } else {
+            video.pause();
+            playButton.style.background = " ";
+        }
+    });
+});
+
+
+/*
 var vid = document.getElementById("bgvid");
 var playButton = document.querySelector("#polina button");
 
@@ -46,7 +64,7 @@ function vidFade() {
 vid.addEventListener('ended', function()
 {
 // only functional if "loop" is removed 
-vid.pause();
+vid.paused();
 // to capture IE10
 vidFade();
 }); 
@@ -82,6 +100,4 @@ $(document).ready(function(){
 	  console.log('afterChange', currentSlide);
 	});
 });
-
-
 

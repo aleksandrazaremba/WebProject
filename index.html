@@ -26,11 +26,11 @@
 </head>
 
 <body>	
-	<div id="container" class="container_12">
+	<div id="container">
 	
-		<div id="Header">
-			<div id="navbar" class="clearfix">
-				<div class="logo" class="grid_2">
+		<div id="Header" class="overlay">
+			<div id="navbar" class="container_12 ">
+				<div class="logo" class="grid_2 alpha prefix_0">
 					<img src="img/logo.png">
 					tajam
 				</div><!-- logo -->
@@ -48,10 +48,10 @@
 			
 			<div class="slideshow-container" class="grid_10 prefix_1 suffix_1">			
 				<div class="text fade" ><!-- text 1-->
-					<h2> 
+					<h2 > 
 						We Are Awesome Creative Agency
 					</h2>
-					<p class="FontPropA">
+					<p >
 						This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
 					</p>
 					<div class="button" class="grid_2 prefix_5 suffix_5"><a href="#">LEARN MORE</a></div>
@@ -84,187 +84,157 @@
 					<div class="button" class="grid_2 prefix_5 suffix_5"><a href="#">LEARN MORE</a></div>
 				</div><!-- text 4-->								
 				
-				<div id="Dotnav" class="grid_2 prefix_5 suffix_5">
-					<span class="dot" onclick="currentSlide(1)"></span> 
-					<span class="dot" onclick="currentSlide(2)"></span> 
-					<span class="dot" onclick="currentSlide(3)"></span> 
-					<span class="dot" onclick="currentSlide(4)"></span> 	
+				<div id="Dotnav" class="container_12">
+					<div id="Dot" class="grid_2 prefix_5 suffix_5">
+						<span class="dot" onclick="currentSlide(1)"></span> 
+						<span class="dot" onclick="currentSlide(2)"></span> 
+						<span class="dot" onclick="currentSlide(3)"></span> 
+						<span class="dot" onclick="currentSlide(4)"></span> 	
+					</div>
 				</div><!-- Dotnav -->	
 			</div><!-- slideshow-container -->
 		</div><!-- Header -->
 				
 		
-		<div id="content">
-		
-			<div id="About">				
-				<div class="clearfix">
-					<div id="AboutLeft" class="grid_4" ><img src="img/logo2.png"></div><!-- AboutLeft -->
-					<div id="AboutRight" class="grid_7" >
-						<h3 class="FontPropD">OUR STORY</h3>
-						<p class="FontPropA" >
+		<div id="content">		
+			<div id="About" class="container_12">					
+					<div id="AboutLeft" class="grid_3 prefix_1 suffix_1 alpha"><img src="img/logo2.png"></div><!-- AboutLeft -->
+					<div id="AboutRight" class="grig_7 omega">
+						<h3 >OUR STORY</h3>
+						<p>
 							This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
-						</p>
-					</div><!-- AboutRight -->
-				</div>
-					<!--<div style="clear: both"></div>-->				
-					<div class="button"><a href="#">LEARN MORE</a></div>								
+						</p>	
+					</div><!-- AboutRight -->	
+						<div class="button"><a href="#">LEARN MORE</a></div>	
 			</div><!-- About -->
 				
 				
-			<div id="AboutVideo">				
-				<video poster="img/bcvideofirst.jpg" id="bgvid" playsinline muted>
-					<source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">
-					<source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4">
-				</video>
-				<div id="polina">
-					<button></button><br>
-				</div>			
+			<div id="AboutVideo">	
+				<div class="overlay">
+					<div class="container_12">
+						<video class="grid_12" id="bgvid" poster="img/bcvideofirst.jpg" playsinline muted>
+							<source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">
+							<source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4">
+						</video>
+						<div id="polina">				
+							<button></button>
+						</div>	
+					</div>
+				</div>
 			</div><!-- AboutVideo -->
 			
 		
-			<div id="Expertise">			
-				<div id="Exp" >
-					<ul class="FontPropA">					
-						<li class="grid_4 alpha prefix_0">
-							<a href="#">
-								<img src="img/icon1.png">
-								<h5 >
-									WEB DESIGN and DEVELOPMENT 
-								</h5>
-								<p>
-									This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-								</p>
-							</a>
-						</li>
-						<li class="grid_4">
-							<a href="#">
-								<img src="img/icon2.png">
-								<h5>ExpertiseItemTopCenter </h5>
-								<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
-							</a>
-						</li>
-						<li class="grid_4">
-							<a href="#">
-								<img src="img/icon3.png">
-								<h5>MOBILE APP</h5>
-								<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
-							</a>
-						</li>
-					</ul>
-					
-					<ul>
-						<li class="grid_4 alpha prefix_0">
-							<a href="#">
-								<img src="img/icon4.png">
-								<h5>SEARCH ENGINE OPTIMIZATION </h5>
-								<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
-							</a>
-						</li>
-						<li class="grid_4">
-							<a href="#">
-								<img src="img/icon5.png">
-								<h5>GAME DEVELOPMENT</h5>
-								<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
-							</a>
-						</li>
-						<li class="grid_4">
-							<a href="#">
-								<img src="img/icon6.png">
-								<h5>MADE WITH LOVE</h5>
-								<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
-							</a>
-						</li>						
-					</ul>
-				</div>		
+			<div id="Expertise" class="container_12">			
+				<div id="Exp" >	
+					<div class="Expe">
+						<div class="ExpItem grid_4"><a href="#"><img src="img/icon1.png"><h5 >WEB DESIGN and DEVELOPMENT </h5><p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p></a>
+						</div>
+						<div class="ExpItem grid_4"><a href="#"><img src="img/icon2.png"><h5>ExpertiseItemTopCenter </h5><p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p></a>
+						</div>
+						<div class="ExpItem grid_4"><a href="#"><img src="img/icon3.png"><h5>MOBILE APP</h5><p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p></a>
+						</div>
+					</div>
+					<div class="Expe">
+						<div class="ExpItem grid_4"><a href="#"><img src="img/icon4.png"><h5>SEARCH ENGINE OPTIMIZATION </h5><p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p></a>
+						</div>
+						<div class="ExpItem grid_4"><a href="#"><img src="img/icon5.png"><h5>GAME DEVELOPMENT</h5><p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p></a>
+						</div >
+						<div class="ExpItem grid_4"><a href="#"><img src="img/icon6.png"><h5>MADE WITH LOVE</h5><p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p></a>
+						</div>
+					</div>
+				</div><!-- Exp -->	
 			</div><!-- Expertise -->
 			
 			
-			<div id="Team" class="class="FontPropA">
-				<div id="TeamTitleBox" class="grid_6 prefix_3 suffix_3">
-					<div id="TeamTitle">
-						<h3 class="FontPropD">MEET OUT AMAZING TEAM</h3>
-						<p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-					</div>
+			<div id="Team" class="overlay">
+				<div class="container_12">
+						<div id="TeamTitleBox">
+							<div id="TeamTitle" class="grid_6 prefix_3 suffix_3">
+								<h3>MEET OUT AMAZING TEAM</h3>
+								<p>Aenean sollicitudin, lorem quis bibendum auctor, nisiipsum, nec sagittis.</p>
+							</div>
+						</div>
+						
+						<div class="TeamItem grid_3"><!-- 1 -->
+							<img src="img/image.png">
+							<h5>SEMF UCUK</h5>
+							<p>CEO and FOUNDER<p>
+						</div><!-- 1 -->
+						<div class="TeamItem grid_3"><!-- 2 -->
+							<img src="img/image.png">
+							<h5>DIK ADALIN</h5>
+							<p>ENGINEERING</p>
+						</div><!-- 2 -->
+						<div class="TeamItem grid_3"><!-- 3 -->
+							<img src="img/image.png">
+							<h5>JENG KOL</h5>
+							<p>DESIGNER</p>
+						</div><!-- 3 -->
+						<div class="TeamItem grid_3"><!-- 4 -->
+							<img src="img/image.png">
+							<h5>PET ROMAK</h5>
+							<p>MARKETING</p>
+						</div><!-- 4 -->
+						
+						<div >
+							<div id="TeamBottom" class="grid_4 prefix_4 suffix_4">
+								<p>Become part of our dream team, let\'s join us!</p>
+							</div>
+						</div>						
+						<div class= "button"><a href="#">WE ARE HIRING</a></div>
 				</div>
-				
-				<div class="TeamItem" class="grid_3 prefix_0"><!-- 1 -->
-					<img src="img/image.png">
-					<h5>SEMF UCUK</h5>
-					<p>CEO and FOUNDER<p>
-				</div><!-- 1 -->
-				<div class="TeamItem"><!-- 2 -->
-					<img src="img/image.png">
-					<h5>DIK ADALIN</h5>
-					<p>ENGINEERING</p>
-				</div><!-- 2 -->
-				<div class="TeamItem"><!-- 3 -->
-					<img src="img/image.png">
-					<h5>JENG KOL</h5>
-					<p>DESIGNER</p>
-				</div><!-- 3 -->
-				<div class="TeamItem"><!-- 4 -->
-					<img src="img/image.png">
-					<h5>PET ROMAK</h5>
-					<p>MARKETING</p>
-				</div><!-- 4 -->
-				
-				<div class="clearfix">
-					<div id="TeamBottom" class="grid_4 prefix_4 sufix_4">
-						<p>Become part of our dream team, let\'s join us!</p>
-					</div>
-				</div>						
-				<div class= "button"><a href="#">WE ARE HIRING</a></div>
-		</div><!-- Team -->
+			</div><!-- Team -->
 			
 		<div id="Works">
-			<div id="WorksTitle" class="clearfix">
-				<h4 class="grid_2" class="FontPropD">
-						OUR WORKS
-				</h4>
-				<p class="grid_3" class="class="FontPropA"> 
-						See All Project in dribbble > 
-				</p>				
-			</div>				
-					<ul>
-						<li><img src="img/img1.jpg"></li>
-						<li><img src="img/img2.jpg"></li>
-						<li><img src="img/img3.jpg"></li>
-						<li><img src="img/img4.jpg"></li>
-						<li><img src="img/img5.jpg"></li>
-						<li><img src="img/img6.jpg"></li>
-					</ul>
-					<ul>
-						<li><img src="img/img2.jpg"></li>
-						<li><img src="img/img4.jpg"></li>
-						<li><img src="img/img6.jpg"></li>
-						<li><img src="img/img1.jpg"></li>
-						<li><img src="img/img3.jpg"></li>
-						<li><img src="img/img5.jpg"></li>
-					</ul>								
-				
-			<div id="WorksBottom">								
-				<div class="button">
-					<a href="#">
-						LOAD MORE
-					</a>
-				</div>					
+			<div id="WorksTitle" class="container_12">
+				<h4 class="grid_2 alpha prefix_0 suffix_7">OUR WORKS</h4>
+				<p class="grid_3 omega">See All Project in dribbble > </p>				
+			</div>		
+			<div id="WorksItems" >	
+					<div class="WorksItemsP">
+						<div class="WorksItem"><img src="img/img1.jpg"></div>
+						<div class="WorksItem"><img src="img/img2.jpg"></div>
+						<div class="WorksItem"><img src="img/img3.jpg"></div>
+						<div class="WorksItem"><img src="img/img4.jpg"></div>
+						<div class="WorksItem"><img src="img/img5.jpg"></div>
+						<div class="WorksItem"><img src="img/img6.jpg"></div>
+					</div>
+					<div class="WorksItemsP">
+						<div class="WorksItem"><img src="img/img2.jpg"></div>
+						<div class="WorksItem"><img src="img/img4.jpg"></div>
+						<div class="WorksItem"><img src="img/img6.jpg"></div>
+						<div class="WorksItem"><img src="img/img1.jpg"></div>
+						<div class="WorksItem"><img src="img/img3.jpg"></div>
+						<div class="WorksItem"><img src="img/img5.jpg"></div>
+					</div>				
+			</div>	
+			<div id="WorksBottom" class="container_12">	
+				<div class="prefix_5">
+					<div class="button">
+						<a href="#">
+							LOAD MORE
+						</a>
+					</div>	
+				</div>
 			</div>
 		</div><!-- Works -->
 			
-			<div id="Testimonials" class="FontPropA">	
-				<div class="grid_10 prefix_1 suffix_1">
-								<p> " </p>					
+			<div id="Testimonials" class="overlay">	
+				<div class="container_12">
+							<div id="TestiText" class="grid_10 prefix_1 suffix_1">
+								<p > " </p>					
 								<p >
 									This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. 
 								</p>			
 								<p >
 									JANE GALADRIEL <br>
-									<span class="FontPropA">
+									<span >
 										CEO TENGKUREP
 									</span>
-								</p>							
+								</p>
+							</div>
 				
-						<div class="grid_6 prefix_2 ">
+						<div class="grid_6 prefix_3 suffix_3">
 							  <div class="slider center">
 								<div class="clip"><img src="img/pict1.png"></div>
 								<div class="clip"><img src="img/pict2.png"></div>
@@ -281,38 +251,34 @@
 				</div>							
 			</div><!-- Testimonials -->			
 						
-			<div id="Contact" class="FontPropD">
-				<div id = "ContactForum" class="grid_4">
+			<div id="Contact" class="container_12">
+				<div id = "ContactForum" class="grid_6 alpha">
 					<h4>GIVE US A GOOD NEWS</h4>									
-					<div id="ContactForm" class="FontPropA"> 
+					<div id="ContactForm" class="grid_6"> 
 						<form>
-							<input type="text" placeholder="Name" autofocus class="grid_4">
-							<input type="text" placeholder="Email" class="grid_4">
-							<input type="text" placeholder="Subject" class="grid_4">
-							<input type="text" placeholder="Your Message" class="grid_4">
+							<input type="text" placeholder="Name" autofocus >
+							<input type="text" placeholder="Email" >
+							<input type="text" placeholder="Subject" >
+							<input type="text" placeholder="Your Message" >
 						</form>						
-						<button id="submit">Submit</button><br/>												
-					<!--<div class="button"><a href="#">Submit</a></div>-->										
+						<button id="submit">Submit</button>												
+	<!--<div class="button"><a href="#">Submit</a></div>-->	
 					</div>					
 				</div>
 				
-				<div id = "Client" class="grid_5">
+				<div id = "Client" class="grid_5 omega prefix_1">
 					<h4>OUR HAPPY CLIENT</h4>					
-					<div class="HappyClient" class="grid_2">
-						<ul>
-							<li><a href="#"><img src="img/zara.png"></a></li>
-							<li><a href="#"><img src="img/bny.png"></a></li>
-							<li><a href="#"><img src="img/converse.png"></a></li>
-							<li><a href="#"><img src="img/levis.png"></a></li>
-						</ul>
+					<div class="HappyClient grid_3 alpha">					
+							<div class="OurClient"><a href="#"><img src="img/zara.png"></a></div>
+							<div class="OurClient"><a href="#"><img src="img/bny.png"></a></div>
+							<div class="OurClient"><a href="#"><img src="img/converse.png"></a></div>
+							<div class="OurClient"><a href="#"><img src="img/levis.png"></a></div>						
 					</div>					
-					<div class="HappyClient" class="grid_2">
-						<ul>
-							<li><a href="#"><img src="img/mango.png"></a></li>
-							<li><a href="#"><img src="img/gucci.png"></a></li>
-							<li><a href="#"><img src="img/puma.png"></a></li>
-							<li><a href="#"><img src="img/bb.png"></a></li>
-						</ul><!-- HappyClient -->						
+					<div class="HappyClient grid_2 omega">						
+							<div class="OurClient"><a href="#"><img src="img/mango.png"></a></div>
+							<div class="OurClient"><a href="#"><img src="img/gucci.png"></a></div>
+							<div class="OurClient"><a href="#"><img src="img/puma.png"></a></div>
+							<div class="OurClient"><a href="#"><img src="img/bb.png"></a></div>
 					</div><!-- ul li -->
 				</div>
 			</div><!-- Contact -->			
@@ -320,8 +286,8 @@
 		
 		<div id="Footer">		
 			<div id="FooterItems">
-				<div id="FooterItemsLeft" class="grid_4" class="class="FontPropA">				
-					<div class="logo" class="grid_2">
+				<div id="FooterItemsLeft">				
+					<div class="logo">
 						<img src="img/logo.png">
 						tajam
 					</div>					
@@ -331,7 +297,7 @@
 						</p>
 					</div>						
 				</div>				
-				<div id="OurStudio" class="grid_4">
+				<div id="OurStudio">
 					<h4 class="FontPropB">OUR STUDIO</h4>					
 					<table class="FontPropA">
 						<tr>
@@ -350,10 +316,10 @@
 					</table>
 				</div>				
 				
-				<div id="StayInTouch" class="grid_4" >
+				<div id="StayInTouch" >
 					<h4 class="FontPropB">STAY IN TOUCH</h4>					
 					<div id="SIT">
-						<form class="grid_3 prefix_0 suffix_0">
+						<form>
 							<input type="text" placeholder="Subscribe our newsletter">
 						</form>									
 						<div id="paper">				
@@ -361,8 +327,7 @@
 								<img src="img/paper.png">	
 							</a>
 						</div>
-					</div>					
-	<!--<div style="clear:both"></div>-->								
+					</div>											
 					<div id="fonts">
 						<ul>
 							<li><img src="img/fb.png"></li>
@@ -375,24 +340,20 @@
 					</div>
 				</div>
 			</div>			
-			<div id="FooterBottom" class="grid_12" class="class="FontPropA">
+			<div id="FooterBottom">
 				<ul class="grid_5">
 					<li><a href="#">HELP</a></li>
 					<li><a href="#">TERMSandCONDITION</a></li>
 					<li><a href="#">PRIVACY</a></li>
 				</ul>
-				<p class="grid_3">Copyright &copy - Tajem Creative</p>	
+				<p>Copyright &copy - Tajem Creative</p>	
 			</div>			
 		</div><!-- Footer -->		
 
 	</div> <!-- container -->
 
 	
-	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-	<script type="text/javascript" src="script.js"></script>	
-	
-	
+
 	
 			<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 			<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

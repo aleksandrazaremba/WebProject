@@ -1,21 +1,17 @@
 html{
 
     font-family: 'Roboto', sans-serif;
-    font-family: 'Playfair Display', serif;
 }
 
 body{
-	text-align: center;
+	background-color: gray;
 }
-
 /*------------- header -----------------*/
 
 #Header{
-	background: linear-gradient(rgba(65, 50, 106, 0.8), rgba(65, 50, 106, 0.8)), url(img/background1.jpg);
 	height: 670px;
-	color: white;
+	background-size: cover;
 }
-	
 #navbar ul {
 	float: right;
 	margin-top: 12px;
@@ -44,6 +40,7 @@ body{
 	padding: 10px;
 	display: none;
 	height: 300px;
+	text-align: center;
 }
 
 .text h2{
@@ -60,9 +57,15 @@ body{
   position: relative;
   margin: auto;
 }
+
+#Dot{
+	text-align: center;
+}
+
 #Dotnav span{
 	border: solid 2px #bbb;
 }
+
 .dot {
   cursor:pointer;
   height: 13px;
@@ -72,6 +75,7 @@ body{
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  margin-left: auto;
 }
 
 .active, .dot:hover, #Dotnav span:hover{
@@ -93,46 +97,28 @@ body{
 
 
 /*------------- content ----------------*/
+
+
 #About{
 	height: 410px;
 }
 
 #AboutLeft{
-	float: left;
 	margin-top: 70px;
 }
 
 #AboutRight{
-	float: left;
 	margin-top: 70px;
 }
 
-#AboutRight h3{
-    color: rgb(65, 61, 75);
-	font-weight: bold;
-}
-
-#AboutRight p{
-    color: rgba(65, 61, 75, 0.749);
-}
-
-#AboutVideo{
-	height: 550px;
-	background: linear-gradient(rgba(65, 50, 106, 0.8), rgba(65, 50, 106, 0.8)), url(img/bcvideo.jpg);
-	color: white;
-}
-
-
-
 video { 
+	margin-top:80px;
     position: static;
-    height: 550px;
-	width: 960px;
     z-index: -100;
-   background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+	background: linear-gradient(rgba(65, 50, 106, 0.8), rgba(65, 50, 106, 0.8)), url(img/bcvideo.jpg);
+   /*background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;*/
 	transition: 1s opacity;
 }
-
 
 .stopfade { 
    opacity: .5;
@@ -143,21 +129,21 @@ video {
   width: 80px;
   height: 80px;
   border: 4px solid; 
-  background: url(img/playicon.png) no-repeat center;
+ /*background: url(img/playicon.png) no-repeat center;*/
   color: #fff;
   border-radius: 50%; 
   cursor: pointer;
   transition: .3s background;
   z-index:100;
   position:relative;
-  top: -400px;
+  top: -350px;
   margin-left:auto;
   margin-right: auto;
 }
+
 #polina button:hover { 
    background: rgba(0,0,0,0.5);
 }
-
 
 @media screen and (max-width: 500px) { 
   div{width:70%;} 
@@ -167,158 +153,92 @@ video {
   #bgvid { display: none; }
 }
 
-
-
-
-
 #Expertise{
-	height: 500px;
+	height: 550px;
+	text-align: center;
 }
 
 #Exp{
-	margin-top: 70px;
+	margin-top: 20px;
 }
 
-#Exp ul{
+.Expe{
 	display: -webkit-flex;
     display: flex;
 }
 
-#Exp ul li{
-	display: inline;
-	margin-top: 15px;
-	margin-bottom: 15px;
-	list-style-type:none;
-	align-items: baseline;
+.ExpItem{
+	margin-top: 40px;
 }
-#Exp ul li a{
+
+.ExpItem a{
 	text-decoration: none;
 	color: black;
 }
 
-#Exp ul li a img{
+.ExpItem img{
 	padding: 20px;
-}
-
-#Exp ul li h5{
-    color: rgb(65, 61, 75);
-    line-height: 1.2;
-    text-align: center;
-}
-
-#Exp ul li p{
-   color: rgba(51, 51, 51, 0.749);
-   line-height: 1.571;
-   text-align: center;
 }
 
 #Team{
 	height: 715px;
-	background: linear-gradient(rgba(65, 50, 106, 0.8), rgba(65, 50, 106, 0.8)), url(img/bcteam.jpg);
-	color: white;
+	text-align:center;
 }
 
 #TeamTitle{
-	padding: 10px;
-}
-
-#TeamTitle h3{
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    line-height: 1.2;
-    text-align: center;
-}
-
-#TeamTitle p{
-	font-size: 14px;
-	font-family: "PlayfairDisplay";
-	color: rgb(249, 249, 249);
-	line-height: 1.2;
+	margin-top: 50px;
 }
 
 .TeamItem{
-	float: left;
+	margin-top: 50px;
+}
+
+.TeamItem img{
 	padding: 10px;
 }
 
-.TeamItem h5{
-  text-align: center;
-}
-
-.TeamItem p{
-	font-size: 13px;
-	color: rgba(250, 250, 250, 0.702);
-	line-height: 1.2;
-}
-
-#TeamBottom p{
-	color: rgb(243, 243, 243);
+#TeamBottom{
+	margin-top: 60px;
 }
 
 #Works{
-	height: 440px;
-	margin: solid red;
+	height: 720px;
 }
 
-#Works h4{
-	text-align: left;
-	padding-top: 5px;
-	color: rgb(65, 61, 75);
-	font-weight: bold;
+#WorksTitle{
+	padding: 10px;
+	margin-bottom: 40px;
 }
 
-#Works p{
-	float: right;
-	padding-top: 10px;
-	color: rgb(65, 61, 75);
+#WorksItems{
+	position: relative;
+	text-align:center;
+	height: 400px;
+	margin-bottom: 70px;
 }
 
-#Works ul{
+.WorksItemsP{
 	display: -webkit-flex;
     display: flex;
-	margin: solid;
-	margin-bottom: 0px;
 }
 
-#Works ul li{
-	display: inline-block;
-	list-style-type:none;
-	margin: 0px;
+.WorksItem{
+	width: 16.67%;
+	display: inline;
 }
 
-#Works ul li img{
-	width: calc(100%/1);
+.WorksItems img{
+	vertical-align: middle;
 }
-
-#WorksBottom{
-	margin-top: 40px;
-}
-
 
 #Testimonials{
-	height: 500px;
-	background: linear-gradient(rgba(65, 50, 106, 0.8), rgba(65, 50, 106, 0.8)), url(img/bctestimonials.jpg);
-	color: white;
+	height: 470px;
 }
 
-
-#Testimonials p:first-child{
-	font-size: 100px;
-	color: rgba(255, 255, 255, 0.902);
-}
-
-#Testimonials p:nth-child(2){
-	font-size: 16px;
-	color: rgba(255, 255, 255, 0.851);
-	text-align: center;
-	width: 770px;
-	height: 95px;
-	margin: 0px;
-}
-
-
-#Testimonials p:nth-child(3) span{
-	color: rgba(255, 255, 255, 0.702);
+#TestiText{
+	height: 270px;
+	text-align:center;
+	margin-top: 40px;
 }
 
 .clip img{
@@ -339,136 +259,49 @@ video {
   height: 70px;
 }
 
-
 #Contact{
 	height: 550px;
-    color: rgb(65, 61, 75);
-    font-weight: bold;
+	margin-top: 60px;
+}
+
+#ContactForum h4{
+	margin-left: 10px;
 }
 
 #ContactForm form input{
 	margin-bottom: 20px;
 	height: 20px;
 	padding: 10px;
+	width: 95%;
 }
 
 #ContactForm form input:nth-child(4) {
 	padding-bottom: 200px;
 }
 
-#Client{
-	float: right;
-	margin-right: 5px;
-}
+.OurClient{
+	height: 110px;
 
-.HappyClient{
-	display: inline-block;
-	height: 420px;
-	width: 180px;
-}
-
-
-.HappyClient ul li{
-	height: 75px;
-	width: 175px;
-	padding-bottom: 10px;
-	padding-top: 20px;
-	padding-right: 5px;
-	list-style-type: none;
 }
 
 
 /*--------------foooter-----------------*/
-#Footer{
-	background: linear-gradient(rgba(65, 50, 106, 0.8), rgba(65, 50, 106, 0.8)), url(img/bcfooter.jpg);
-	color: white;
-	height: 300px;
-	color: white;
-	text-align: left;
-}
-
-#OurStudio table tr th{
-	padding: 5px;
-}
-
-#FooterBottom  {
-	margin-top: 100px;	
-    color: rgb(255, 255, 255);
-}
-
-#FooterBottom p {
-	float: right;
-}
-
-#FooterBottom ul li{
-	display: inline-block;
-	list-style-type: none;
-}
-
-#FooterBottom ul li a{
-	text-decoration: none;
-	color: white;
-}
-
-#FooterItemsLeftText{
-	display: block;
-	color: rgb(255, 255, 255);
-}
-
-#StayInTouch{
-	margin-left: 0px;
-}
-
-#SIT{
-	display: inline-block;
-	display: flex;	
-}
-
-#SIT form {
-	margin-left: 0px;
-	display: flex;	
-}
-
-#SIT form input{
-	margin-left: 0px;	
-	padding: 2px;
-	width: 180px;
-	background: rgba(255, 255, 255, 0.3);
-	border: 0px;
-}
-
-#paper img {
-	list-style-type: none;
-	background: rgba(255, 255, 255, 0.3);
-	padding: 5px 20px 5px 20px;
-}
-
-#fonts{
-	margin: 10px;
-}
-
-#fonts ul{
-	display: -webkit-flex;
-    display: flex;
-}
-
-#fonts ul li{
-	display: inline-block;
-	list-style-type: none;
-	margin-left: 0px;
-	margin-right: 20px;
-}
-
 
 /*-------------- class ----------------*/
+.overlay{
+	background-color: rgba(76, 61, 114, 0.5);
+	width: 100%;
+}
+
 .button{	
 	position: relative;
 	border: solid 1px;
 	color: #00E0D0;
 	border-radius: 2px;
 	text: 10px;
-	padding: 15px;
+	padding: 9px 30px;
 	display: inline-block;
+	vertical-align: center;
 }
 
 .button a{	
@@ -476,15 +309,6 @@ video {
 	color: #00E0D0;
 }
 
-#submit{	
-	border: solid 1px;
-	color: #00E0D0;
-	border-radius: 2px;
-	text: 10px;
-	padding: 10px;
-	display: inline-block;
-	background: none;
-}
 
 .logo{
 	display: inline-block;
@@ -499,23 +323,3 @@ video {
 	}
 
 /*-------------- fonts ----------------*/
-
-.FontPropA{
-	font-size: 14px;
-	font-family: "Roboto";
-}
-
-.FontPropB{
-	font-size: 15px;
-	font-family: "Roboto";
-}
-
-.FontPropC{
-	font-size: 13px;
-	font-family: "Roboto";
-}
-
-.FontPropC{
-	font-size: 22px;
-	font-family: "PlayfairDisplay";
-}
