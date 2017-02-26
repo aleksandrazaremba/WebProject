@@ -4,13 +4,15 @@ html{
 }
 
 body{
-	background-color: gray;
+	margin-left: 0px;
+	margin-right: 0px;
 }
 /*------------- header -----------------*/
 
 #Header{
-	height: 670px;
-	background-size: cover;
+	height: 670px;	
+	background: url(img/background1.jpg) no-repeat center;
+	background-size: 100% 100%;
 }
 #navbar ul {
 	float: right;
@@ -111,8 +113,14 @@ body{
 	margin-top: 70px;
 }
 
+#AboutVideo{
+	background: url(img/bcvideo.jpg) no-repeat center;
+	background-size: 100% 100%;
+	height:550px;
+}
+
 video { 
-	margin-top:80px;
+	margin-top:10px;
     position: static;
     z-index: -100;
 	background: linear-gradient(rgba(65, 50, 106, 0.8), rgba(65, 50, 106, 0.8)), url(img/bcvideo.jpg);
@@ -183,6 +191,8 @@ video {
 #Team{
 	height: 715px;
 	text-align:center;
+	background: url(img/bcteam.jpg) no-repeat center;
+	background-size: 100% 100%;
 }
 
 #TeamTitle{
@@ -233,6 +243,8 @@ video {
 
 #Testimonials{
 	height: 470px;
+	background: url(img/bctestimonials.jpg) no-repeat center;
+	background-size: 100% 100%;
 }
 
 #TestiText{
@@ -281,7 +293,6 @@ video {
 
 .OurClient{
 	height: 110px;
-
 }
 
 
@@ -289,15 +300,13 @@ video {
 
 #Footer{
 	height: 350px;
-	display: inline-block;
-	list-style-type: none;
+	background: url(img/bcfooter.jpg) no-repeat center;
+	background-size: 100% 100%;
 }
 
 #FooterItems{
 	margin-top: 50px;
 }
-
-
 
 #FooterBottom  {
 	margin-top: 100px;	
@@ -342,6 +351,7 @@ video {
 .overlay{
 	background-color: rgba(76, 61, 114, 0.5);
 	width: 100%;
+	height: 100%;
 }
 
 .button{	
@@ -358,6 +368,16 @@ video {
 .button a{	
 	text-decoration: none;
 	color: #00E0D0;
+}
+
+#submit{	
+	border: solid 1px;
+	color: #00E0D0;
+	border-radius: 2px;
+	text: 10px;
+	padding: 9px 20px;
+	display: inline-block;
+	background: none;
 }
 
 
